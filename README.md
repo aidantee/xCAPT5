@@ -1,6 +1,6 @@
-# MCAPST5-X for Protein-Protein Interaction Prediction
+# xCAPT5 for Protein-Protein Interaction Prediction
 
-A Hybrid of Deep multi-kernel Convolutional Neural Networks and XGBoost using Protein Language Model for Protein-Protein Prediction MCAPST5-X. 
+A Hybrid of Deep multi-kernel Convolutional Neural Networks and XGBoost using Protein Language Model for Protein-Protein Prediction xCAPT5. 
 
 ## Directory Structure
 
@@ -9,7 +9,7 @@ A Hybrid of Deep multi-kernel Convolutional Neural Networks and XGBoost using Pr
   - PIPR (Chen _et al._, 2019)
   - D-SCRIPT (Sledzieski _et al._, 2021)
   - Topsy-Turvy (Singh _et al._, 2022)
-  - MCAPST5-X (proposed)
+  - xCAPT5 (proposed)
 
  
 - `data`: This directory contains various datasets including:
@@ -18,11 +18,11 @@ A Hybrid of Deep multi-kernel Convolutional Neural Networks and XGBoost using Pr
   - Dscript-data: Human, E. coli, Fly, Worm, Yeast (Sledzieski _et al._, 2021)
   - Interspecies datasets: Virus-human PPI datasets (Yang _et al._, 2021)
 
-- `checkpoints`: This directory contains the saved states of MCAPST5-X training on Pan and Sledzieski human datasets for the inference on other indepedent test sets, allowing for the resumption of training and inference.
+- `checkpoints`: This directory contains the saved states of xCAPT5 training on Pan and Sledzieski human datasets for the inference on other indepedent test sets, allowing for the resumption of training and inference.
 
 - `embeddings`: This directory contains pre-computed embeddings used specifically for the PIPR model.
 
-- `environment`: This directory contains a `requirements.txt` file that lists all the Python packages needed to reproduce the MCAPST5-X model. However, this can be ignored as all the necessary libraries with specified versions are included in the Jupyter Notebook for MCAPST5-X.
+- `environment`: This directory contains a `requirements.txt` file that lists all the Python packages needed to reproduce the xCAPT5 model. However, this can be ignored as all the necessary libraries with specified versions are included in the Jupyter Notebook for xCAPT5.
 
 ## Usage
 
@@ -33,6 +33,6 @@ You can then choose different datasets from the `data` directory to perform cros
 
 ## Hardware Requirements
 
-The MCAPST5-X project is designed to run on high-performance computing hardware. We recommend using a virtual machine equipped with an A100 SXM4 GPU (80 GB VRAM) and a CPU with 120 GB RAM. This setup ensures efficient model cross-validation, training, and inference, enabling fast and accurate protein-protein interaction predictions.
+The xCAPT5 project is designed to run on high-performance computing hardware. We recommend using a virtual machine equipped with an A100 SXM4 GPU (80 GB VRAM) and a CPU with 120 GB RAM. This setup ensures efficient model cross-validation, training, and inference, enabling fast and accurate protein-protein interaction predictions.
 
 We leverage the power of cloud computing through [VastAI](https://vast.ai/), a high-throughput computing service, to access this level of hardware. We use the Docker Image Template _tensorflow:latest-gpu_ with the Launch Mode _jupyter-python notebook_, which is a convenient and consistent setup for running deep learning experiments on the Jupyter Notebook environment.  If you're using your own setup, please ensure your hardware meets these requirements to achieve optimal performance.
