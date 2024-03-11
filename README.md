@@ -1,4 +1,5 @@
 # xCAPT5 for Protein-Protein Interaction Prediction
+This repo is for the paper: `Dang, T.H., Vu, T.A. xCAPT5: protein–protein interaction prediction using deep and wide multi-kernel pooling convolutional neural networks with protein language model. BMC Bioinformatics 25, 106 (2024). https://doi.org/10.1186/s12859-024-05725-6`.
 
 A Hybrid of Deep multi-kernel Convolutional Neural Networks and XGBoost using Protein Language Model for Protein-Protein Prediction xCAPT5. 
 
